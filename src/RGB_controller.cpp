@@ -34,7 +34,7 @@ void action_loop() {
     if (mode == 4) {
         turn_blue();
     }
-    else {
+    if (mode == 5) {
         mode = 0;
     }
 }
