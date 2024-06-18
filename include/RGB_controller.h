@@ -5,6 +5,6 @@
 #define RED 5
 #define BTN 2
 
-void setup_pins();
+void SetupPins();
 void action_loop();
 #endif

@@ -6,7 +6,7 @@ int mode = 0;
 void turn_off();
 void turn_white(), turn_red(), turn_blue(), turn_green();
 
-void setup_pins() {
+void SetupPins() {
     pinMode(RED, OUTPUT);
     pinMode(BLUE, OUTPUT);
     pinMode(GREEN, OUTPUT);
