@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "../include/RGB_controller.h"
 
-int mode = 0;
+int32_t mode = 0;
 
 void turn_off();
 void turn_white(), turn_red(), turn_blue(), turn_green();
@@ -14,7 +14,7 @@ void SetupPins() {
     pinMode(BTN, INPUT_PULLUP);
 }
 
-void action_loop() {
+int32_t RGBsModeCheck() {
     if (digitalRead(BTN) == LOW) {
         mode = mode + 1;
         delay(400);
@@ -37,6 +37,7 @@ void action_loop() {
     if (mode == 5) {
         mode = 0;
     }
+    return mode;
 }
 
 void turn_off() {

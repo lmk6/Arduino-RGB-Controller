@@ -1,5 +1,8 @@
 #ifndef SIN_SEG
 #define SIN_SEG
+
+#include <stdint.h>
+
 #define G_PIN 4
 #define F_PIN 7
 #define A_PIN 8

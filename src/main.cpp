@@ -1,14 +1,11 @@
 #include <Arduino.h>
-#include "../include/RGB_controller.h"
-#include "../include/single_segment_controller.h"
+#include "../include/app.h"
 
 void setup() {
   Serial.begin(115200);
-  SetupPins();
-  SetupSegment();
+  AppSetup();
 }
 
 void loop() {
-  action_loop();
-  DisplayDigit(8);
+  AppLoop();
 }

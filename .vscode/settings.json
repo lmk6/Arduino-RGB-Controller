@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "app.h": "c",
+        "single_segment_controller.h": "c"
+    }
+}
